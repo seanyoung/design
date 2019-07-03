@@ -514,12 +514,13 @@ Set the returning output data for the execution. This will halt the execution im
 
 ## revert
 
-Set the returning output data for the execution. This will halt the execution immediately and set the execution result to "reverted".
+Set the returning output data for the execution. This will halt the execution immediately and set the execution result to "reverted". The data can be encoded in ABI encoding (dataEncoding = 1), plain string (dataEncoding = 2) or empty message (dataEncoding = 0).
 
 **Parameters**
 
 -   `dataOffset` **i32ptr** the memory offset of the output data (`bytes`)
 -   `dataLength` **i32** the length of the output data
+-   `dataEncoding` **i32** the encoding of the data
 
 **Returns**
 
